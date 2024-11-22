@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game by thesoumisamanta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div id="userScore">Score : 0</div>
+            <div id="highestScore">High Score: 0</div>
+            <div class="level-selector">
+                <select id="game-level">
+                    <option value="5">Low</option>
+                    <option value="10" selected>Medium</option>
+                    <option value="15">High</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="board"></div>
+
+        <div class="mobile-controls">
+            <div class="control-row">
+                <button id="btn-up" class="control-btn">▲</button>
+            </div>
+            <div class="control-row">
+                <button id="btn-left" class="control-btn">◀</button>
+                <button id="btn-right" class="control-btn">▶</button>
+            </div>
+            <div class="control-row">
+                <button id="btn-down" class="control-btn">▼</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="game-over-modal">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <p id="final-score">Your Score: 0</p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
